@@ -2607,6 +2607,9 @@ switch (p1){
 			}
 		break;
 		case "Поворотное":
+			document.getElementById("comm").hidden = false;
+			document.getElementById("prim").hidden = false;
+      			document.getElementById("comm").innerHTML="Для створок тяжелее 100кг необходимо добавить на каждую створку крепежную кулису комплект усиления 247037.";
 		switch (p3){
 			case "Белый": console.log('Siegenia 5200 Поворотное Белый');
 				if (p4<365){fill ("Минимальная ширина - 365мм !!!","","","","",""," ","","","","",""," ","","","","","","-","-",
@@ -2717,7 +2720,9 @@ switch (p1){
 			}
 		break;
 		case "Фрамужное":
-		switch (p3){
+			document.getElementById("comm").hidden = true;
+			document.getElementById("prim").hidden = true;
+      		switch (p3){
 			case "Белый": console.log('Siegenia 5200 Фрамужное Белый');
 				if (p4<400){fill ("Минимальная ширина - 400мм !!!","","","","",""," ","","","","",""," ","","","","","","-","-",
 											"-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-");}
